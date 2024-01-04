@@ -1,0 +1,5 @@
+terraform.tfstate.backup
+ec2_cfg.yml
+.terraform
+.terraform.lock.hcl
+terraform.tfstate

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bboxapp
+  namespace: default
+  labels:
+    app: bboxapp
+spec:
+  selector:
+    matchLabels:
+      app: bboxapp
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bboxapp
+    spec:
+      containers:
+      - name: bboxapp
+        image:  busybox
+        command: [ "/bin/sh", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]

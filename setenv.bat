@@ -1,0 +1,1 @@
+$env:KUBECONFIG="${pwd}/kubecfg/k3s.yml"
